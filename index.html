@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-4"> </div>
+        <div class="col-4" id="calcu">
+<input id="result" class=" input mt-3" type="text "><br><br>
+
+<button class="btn btn-primary ms-5 " type="submit" onclick="displaynum('+')">+</button>
+<input class="btn btn-primary " type="button" value="-" onclick="displaynum('-')">
+<input class="btn btn-primary" type="submit" value="*" onclick="displaynum('*')">
+<input class="btn btn-primary" type="button" value="/" onclick="displaynum('/')">
+<br><br>
+<button class="btn btn-light ms-5" type="submit" onclick="displaynum(7)">7</button>
+<input class="btn btn-light" type="button" value="8" onclick="displaynum(8)">
+<input class="btn btn-light" type="submit" value="9" onclick="displaynum(9)">
+<input class="btn btn-light" type="button" value="0" onclick="displaynum(0)">
+<br><br>
+<button class="btn btn-light ms-5" type="submit" onclick="displaynum(4)">4</button>
+<input class="btn btn-light" type="button" value="5" onclick="displaynum(5)">
+<input class="btn btn-light" type="submit" value="6" onclick="displaynum(6)">
+<input class="btn btn-light" type="button" value="." onclick="displaynum('.')">
+<br><br>
+<button class="btn btn-light ms-5" type="submit" onclick="displaynum(1)">1</button>
+<input class="btn btn-light" type="button" value="2" onclick="displaynum(2)">
+<input class="btn btn-light" type="submit" value="3" onclick="displaynum(3)">
+<input class="btn btn-secondary" type="button" value="=" onclick="evaluateexpr()">
+<br><br>
+<input class="btn btn-light ms-5" type="button" value="(" onclick="displaynum('(')">
+<input class="btn btn-light" type="submit" value=")" onclick="displaynum(')')">
+<button class="btn btn-danger" type="submit" onclick="clearbox()">AC</button>
+<button class="btn btn-danger" type="submit" onclick="lastitem()">del</button>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>
+<script src="./cal.js"></script>
+</html>

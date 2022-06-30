@@ -1,0 +1,17 @@
+#calcu{
+    width: 25%;
+    height: 440px;
+    background-color: black;
+    margin: auto;
+    
+}
+.btn{
+    width: 100px;
+    height: 10%;
+}
+.input{
+    width: 80%;
+    height: 10%;
+    margin-left: 45px;
+    
+}
